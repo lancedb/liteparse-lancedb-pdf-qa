@@ -86,13 +86,23 @@ set -a && source .env && set +a
 
 Each step writes its outputs and metrics to disk. Generated data under `data/` is gitignored.
 
-**1. Download the dataset** (reproducible; verified by SHA256 in `manifest.json`):
+**1. Download the dataset.** Pulls the six reports and the benchmark questions live from the public
+[Climate Finance Bench](https://github.com/Pladifes/climate_finance_bench) GitHub repo — no account,
+API token, or manual step needed (the script uses only the Python standard library, so it even runs
+before `uv sync`):
 
 ```bash
 uv run python scripts/download_climate_finance_bench.py \
   --companies Samsung NVIDIA Google "Ali Baba Group" Nestle "Total Energies S.A" \
   --out data/raw/climate_finance_bench
 ```
+
+It fetches the benchmark JSON and normalizes the matching questions into
+`data/eval/selected_questions.jsonl` (the 50 page-labeled questions), discovers each company's report
+PDF through the GitHub API and downloads it under `data/raw/climate_finance_bench/`, then writes a
+`manifest.json` recording the source repo, ref, and a SHA256 for every file. The download is
+idempotent — existing files are skipped unless you pass `--force`. Pass `--ref <commit-sha>` to pin an
+exact upstream commit; the default is `main`, so pin the SHA if you need bit-identical reproduction.
 
 Optionally sanity-check the download — counts of reports, pages, and labeled questions:
 
