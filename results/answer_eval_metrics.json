@@ -1,0 +1,139 @@
+{
+  "questions": 50,
+  "answer_correct_rate": 0.74,
+  "mean_judge_score": 0.726,
+  "median_judge_score": 0.75,
+  "retrieval_any_page_hit_rate": 0.82,
+  "retrieval_page_coverage": 0.7332380952380952,
+  "retrieval_all_pages_hit_rate": 0.66,
+  "answer_latency_ms_p50": 4398.165042002802,
+  "judge_latency_ms_p50": 1671.0468544915784,
+  "by_company": [
+    {
+      "company": "Ali Baba Group",
+      "questions": 10,
+      "answer_correct_rate": 0.7,
+      "mean_judge_score": 0.64,
+      "retrieval_any_page_hit_rate": 0.8,
+      "retrieval_page_coverage": 0.7
+    },
+    {
+      "company": "Google",
+      "questions": 9,
+      "answer_correct_rate": 0.8888888888888888,
+      "mean_judge_score": 0.8777777777777778,
+      "retrieval_any_page_hit_rate": 0.7777777777777778,
+      "retrieval_page_coverage": 0.6944444444444444
+    },
+    {
+      "company": "NVIDIA",
+      "questions": 8,
+      "answer_correct_rate": 0.875,
+      "mean_judge_score": 0.8,
+      "retrieval_any_page_hit_rate": 0.875,
+      "retrieval_page_coverage": 0.6979166666666666
+    },
+    {
+      "company": "Nestle",
+      "questions": 8,
+      "answer_correct_rate": 0.625,
+      "mean_judge_score": 0.63125,
+      "retrieval_any_page_hit_rate": 0.875,
+      "retrieval_page_coverage": 0.875
+    },
+    {
+      "company": "Samsung",
+      "questions": 7,
+      "answer_correct_rate": 0.7142857142857143,
+      "mean_judge_score": 0.7642857142857142,
+      "retrieval_any_page_hit_rate": 1.0,
+      "retrieval_page_coverage": 1.0
+    },
+    {
+      "company": "Total Energies S.A",
+      "questions": 8,
+      "answer_correct_rate": 0.625,
+      "mean_judge_score": 0.65,
+      "retrieval_any_page_hit_rate": 0.625,
+      "retrieval_page_coverage": 0.4785714285714286
+    }
+  ],
+  "by_question_type": [
+    {
+      "question_type": "LR",
+      "questions": 24,
+      "answer_correct_rate": 0.75,
+      "mean_judge_score": 0.7125,
+      "retrieval_any_page_hit_rate": 0.7083333333333334,
+      "retrieval_page_coverage": 0.6463293650793651
+    },
+    {
+      "question_type": "NR",
+      "questions": 8,
+      "answer_correct_rate": 0.75,
+      "mean_judge_score": 0.75,
+      "retrieval_any_page_hit_rate": 1.0,
+      "retrieval_page_coverage": 1.0
+    },
+    {
+      "question_type": "PE",
+      "questions": 18,
+      "answer_correct_rate": 0.7222222222222222,
+      "mean_judge_score": 0.7333333333333333,
+      "retrieval_any_page_hit_rate": 0.8888888888888888,
+      "retrieval_page_coverage": 0.7305555555555556
+    }
+  ],
+  "by_modality": [
+    {
+      "required_modality": "figure",
+      "questions": 7,
+      "answer_correct_rate": 0.7142857142857143,
+      "mean_judge_score": 0.7071428571428572,
+      "retrieval_any_page_hit_rate": 0.8571428571428571,
+      "retrieval_page_coverage": 0.8571428571428571
+    },
+    {
+      "required_modality": "table",
+      "questions": 14,
+      "answer_correct_rate": 0.6428571428571429,
+      "mean_judge_score": 0.7321428571428571,
+      "retrieval_any_page_hit_rate": 0.8571428571428571,
+      "retrieval_page_coverage": 0.7678571428571429
+    },
+    {
+      "required_modality": "text",
+      "questions": 29,
+      "answer_correct_rate": 0.7931034482758621,
+      "mean_judge_score": 0.7275862068965517,
+      "retrieval_any_page_hit_rate": 0.7931034482758621,
+      "retrieval_page_coverage": 0.6866174055829228
+    }
+  ],
+  "by_difficulty": [
+    {
+      "difficulty": "easy",
+      "questions": 2,
+      "answer_correct_rate": 1.0,
+      "mean_judge_score": 0.825,
+      "retrieval_any_page_hit_rate": 1.0,
+      "retrieval_page_coverage": 1.0
+    },
+    {
+      "difficulty": "hard",
+      "questions": 29,
+      "answer_correct_rate": 0.7586206896551724,
+      "mean_judge_score": 0.710344827586207,
+      "retrieval_any_page_hit_rate": 0.7241379310344828,
+      "retrieval_page_coverage": 0.6090311986863711
+    },
+    {
+      "difficulty": "medium",
+      "questions": 19,
+      "answer_correct_rate": 0.6842105263157895,
+      "mean_judge_score": 0.7394736842105264,
+      "retrieval_any_page_hit_rate": 0.9473684210526315,
+      "retrieval_page_coverage": 0.8947368421052632
+    }
+  ]
+}

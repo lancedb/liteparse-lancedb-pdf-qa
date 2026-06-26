@@ -1,0 +1,233 @@
+{
+  "run_type": "labeled_pages_openai_small_text_embeddings_openclip_image_embeddings",
+  "dataset": {
+    "companies": 6,
+    "questions": 50,
+    "question_counts": {
+      "Ali Baba Group": 10,
+      "Google": 9,
+      "NVIDIA": 8,
+      "Nestle": 8,
+      "Samsung": 7,
+      "Total Energies S.A": 8
+    }
+  },
+  "parse": {
+    "documents": 6,
+    "pages": 70,
+    "chunks": 252,
+    "assets": 147,
+    "engine": "lit-cli",
+    "ocr": false,
+    "dpi": 150
+  },
+  "storage": {
+    "documents": 6,
+    "pages": 70,
+    "chunks": 252,
+    "assets": 147,
+    "eval_questions": 50,
+    "db_size_bytes": 224306327
+  },
+  "retrieval_top_k": 5,
+  "retrieval": {
+    "assets": {
+      "questions": 50,
+      "any_page_hit_rate": 0.5,
+      "page_coverage": 0.32852380952380955,
+      "all_pages_hit_rate": 0.22,
+      "modality_hit_rate": 0.78,
+      "latency_ms_p50": 2.132228997652419,
+      "latency_ms_p95": 4.011541001091246
+    },
+    "chunks": {
+      "questions": 50,
+      "any_page_hit_rate": 0.72,
+      "page_coverage": 0.5878809523809524,
+      "all_pages_hit_rate": 0.48,
+      "modality_hit_rate": 0.58,
+      "latency_ms_p50": 2.2120829999039415,
+      "latency_ms_p95": 6.482707998657133
+    },
+    "hybrid_bundle": {
+      "questions": 50,
+      "any_page_hit_rate": 0.82,
+      "page_coverage": 0.7332380952380952,
+      "all_pages_hit_rate": 0.66,
+      "modality_hit_rate": 0.68,
+      "latency_ms_p50": 6.012729001668049,
+      "latency_ms_p95": 11.20541599811986
+    },
+    "pages": {
+      "questions": 50,
+      "any_page_hit_rate": 0.76,
+      "page_coverage": 0.6715714285714286,
+      "all_pages_hit_rate": 0.6,
+      "modality_hit_rate": 0.94,
+      "latency_ms_p50": 2.1028334995207842,
+      "latency_ms_p95": 4.103541003132705
+    }
+  },
+  "embedding": {
+    "text_backend": "openai",
+    "text_model": "text-embedding-3-small",
+    "text_dimensions": 1536,
+    "image_backend": "open-clip",
+    "image_model": "ViT-B-32",
+    "image_pretrained": "laion2b_s34b_b79k",
+    "image_dimensions": 512
+  },
+  "extraction_performance": {
+    "documents": 6,
+    "pages": 70,
+    "chunks": 252,
+    "assets": 147,
+    "liteparse_parse_seconds": 0.7582022069982486,
+    "liteparse_screenshot_seconds": 2.0936858350105467,
+    "total_extraction_seconds": 2.8776632080043782,
+    "parse_pages_per_second": 92.32365634641538,
+    "screenshot_pages_per_second": 33.43386043381594,
+    "end_to_end_pages_per_second": 24.325292760212925,
+    "by_document": [
+      {
+        "doc_id": "total_energies_s_a_2023_totalenergies_sustainability_climate_2024_progre",
+        "company": "Total Energies S.A",
+        "source_pdf": "totalenergies_sustainability-climate-2024-progress-report_2024_en_pdf (1).pdf",
+        "pages": 18,
+        "chunks": 53,
+        "assets": 38,
+        "liteparse_parse_seconds": 0.16638191599486163,
+        "liteparse_screenshot_seconds": 0.3999424590001581,
+        "total_extraction_seconds": 0.5718805409997003,
+        "parse_pages_per_second": 108.18483422534871
+      },
+      {
+        "doc_id": "ali_baba_group_2024_2024_alibaba_group_environmental_social_and_gove",
+        "company": "Ali Baba Group",
+        "source_pdf": "2024 Alibaba Group Environmental, Social and Governance Report-0809.pdf",
+        "pages": 12,
+        "chunks": 41,
+        "assets": 18,
+        "liteparse_parse_seconds": 0.10969787499925587,
+        "liteparse_screenshot_seconds": 0.2750832080055261,
+        "total_extraction_seconds": 0.38874495899653994,
+        "parse_pages_per_second": 109.39136241318623
+      },
+      {
+        "doc_id": "nestle_2023_creating_shared_value_sustainability_report_2023",
+        "company": "Nestle",
+        "source_pdf": "creating-shared-value-sustainability-report-2023-en.pdf",
+        "pages": 8,
+        "chunks": 40,
+        "assets": 14,
+        "liteparse_parse_seconds": 0.09743770799832419,
+        "liteparse_screenshot_seconds": 0.4899855830008164,
+        "total_extraction_seconds": 0.5920269580019522,
+        "parse_pages_per_second": 82.10373749901414
+      },
+      {
+        "doc_id": "samsung_2023_samsung_electronics_sustainability_report_2024_e",
+        "company": "Samsung",
+        "source_pdf": "Samsung_Electronics_Sustainability_Report_2024_ENG.pdf",
+        "pages": 6,
+        "chunks": 31,
+        "assets": 9,
+        "liteparse_parse_seconds": 0.07361987500189571,
+        "liteparse_screenshot_seconds": 0.13725191700359574,
+        "total_extraction_seconds": 0.21384058299736353,
+        "parse_pages_per_second": 81.49973087899838
+      },
+      {
+        "doc_id": "google_2023_google_2024_environmental_report",
+        "company": "Google",
+        "source_pdf": "google-2024-environmental-report.pdf",
+        "pages": 14,
+        "chunks": 52,
+        "assets": 54,
+        "liteparse_parse_seconds": 0.22586316600063583,
+        "liteparse_screenshot_seconds": 0.5740872090027551,
+        "total_extraction_seconds": 0.8052116250037216,
+        "parse_pages_per_second": 61.984431759716806
+      },
+      {
+        "doc_id": "nvidia_2024_fy2024_nvidia_corporate_sustainability_report",
+        "company": "NVIDIA",
+        "source_pdf": "FY2024-NVIDIA-Corporate-Sustainability-Report.pdf",
+        "pages": 12,
+        "chunks": 35,
+        "assets": 14,
+        "liteparse_parse_seconds": 0.08520166700327536,
+        "liteparse_screenshot_seconds": 0.21733545899769524,
+        "total_extraction_seconds": 0.30595854200510075,
+        "parse_pages_per_second": 140.8423147347421
+      }
+    ]
+  },
+  "answer_eval_smoke": {
+    "questions": 5,
+    "answer_correct_rate": 0.8,
+    "mean_judge_score": 0.65,
+    "median_judge_score": 0.75,
+    "retrieval_any_page_hit_rate": 0.6,
+    "retrieval_page_coverage": 0.4,
+    "retrieval_all_pages_hit_rate": 0.2,
+    "answer_latency_ms_p50": 5939.637666997442,
+    "judge_latency_ms_p50": 1769.1469159981352,
+    "by_company": [
+      {
+        "company": "Ali Baba Group",
+        "questions": 5,
+        "answer_correct_rate": 0.8,
+        "mean_judge_score": 0.65,
+        "retrieval_any_page_hit_rate": 0.6,
+        "retrieval_page_coverage": 0.4
+      }
+    ],
+    "by_question_type": [
+      {
+        "question_type": "LR",
+        "questions": 3,
+        "answer_correct_rate": 0.6666666666666666,
+        "mean_judge_score": 0.5833333333333334,
+        "retrieval_any_page_hit_rate": 0.3333333333333333,
+        "retrieval_page_coverage": 0.3333333333333333
+      },
+      {
+        "question_type": "PE",
+        "questions": 2,
+        "answer_correct_rate": 1.0,
+        "mean_judge_score": 0.75,
+        "retrieval_any_page_hit_rate": 1.0,
+        "retrieval_page_coverage": 0.5
+      }
+    ],
+    "by_modality": [
+      {
+        "required_modality": "text",
+        "questions": 5,
+        "answer_correct_rate": 0.8,
+        "mean_judge_score": 0.65,
+        "retrieval_any_page_hit_rate": 0.6,
+        "retrieval_page_coverage": 0.4
+      }
+    ],
+    "by_difficulty": [
+      {
+        "difficulty": "hard",
+        "questions": 4,
+        "answer_correct_rate": 0.75,
+        "mean_judge_score": 0.625,
+        "retrieval_any_page_hit_rate": 0.5,
+        "retrieval_page_coverage": 0.375
+      },
+      {
+        "difficulty": "medium",
+        "questions": 1,
+        "answer_correct_rate": 1.0,
+        "mean_judge_score": 0.75,
+        "retrieval_any_page_hit_rate": 1.0,
+        "retrieval_page_coverage": 0.5
+      }
+    ]
+  }
+}

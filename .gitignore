@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets
+.env
+
+# Local downloaded/generated data
+data/
+
+# Disposable scratch artifacts
+scratch/
+
+# OS files
+.DS_Store

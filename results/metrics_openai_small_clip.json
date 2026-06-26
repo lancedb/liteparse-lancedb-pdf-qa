@@ -1,0 +1,47 @@
+{
+  "assets": {
+    "questions": 50,
+    "any_page_hit_rate": 0.38,
+    "page_coverage": 0.27669047619047615,
+    "all_pages_hit_rate": 0.2,
+    "modality_hit_rate": 0.66,
+    "latency_ms_p50": 1.6895834996830672,
+    "latency_ms_p95": 3.6519579953164794
+  },
+  "chunks": {
+    "questions": 50,
+    "any_page_hit_rate": 0.72,
+    "page_coverage": 0.5878809523809524,
+    "all_pages_hit_rate": 0.48,
+    "modality_hit_rate": 0.58,
+    "latency_ms_p50": 1.7266040013055317,
+    "latency_ms_p95": 6.925708999915514
+  },
+  "hybrid_bundle": {
+    "questions": 50,
+    "any_page_hit_rate": 0.82,
+    "page_coverage": 0.7332380952380952,
+    "all_pages_hit_rate": 0.66,
+    "modality_hit_rate": 0.68,
+    "latency_ms_p50": 4.739583499031141,
+    "latency_ms_p95": 6.420417004846968
+  },
+  "images": {
+    "questions": 50,
+    "any_page_hit_rate": 0.76,
+    "page_coverage": 0.6091904761904762,
+    "all_pages_hit_rate": 0.48,
+    "modality_hit_rate": 0.9,
+    "latency_ms_p50": 17.863875000330154,
+    "latency_ms_p95": 28.862458006187808
+  },
+  "pages": {
+    "questions": 50,
+    "any_page_hit_rate": 0.76,
+    "page_coverage": 0.6715714285714286,
+    "all_pages_hit_rate": 0.6,
+    "modality_hit_rate": 0.94,
+    "latency_ms_p50": 1.6521875040780287,
+    "latency_ms_p95": 4.086458000529092
+  }
+}

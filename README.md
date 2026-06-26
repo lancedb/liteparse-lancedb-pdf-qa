@@ -60,17 +60,27 @@ three text searches and merges candidates by `page_id`).
 
 ## Setup
 
-Requires Python 3.13+ and [uv](https://docs.astral.sh/uv/). The OpenAI embeddings and answer/judge
-models need an API key:
+Requires Python 3.13+ and [uv](https://docs.astral.sh/uv/).
+
+**1. Install the environment.** `uv sync` reads `pyproject.toml`/`uv.lock` and creates a `.venv`
+with every dependency (`liteparse`, `lancedb`, `pylance`, `open-clip-torch`, `openai`,
+`pydantic-ai`, …):
 
 ```bash
-cp .env.example .env          # then add your OPENAI_API_KEY
-set -a && source .env && set +a
+uv sync
 ```
 
-Dependencies (installed automatically by `uv run`) include `liteparse`, `lancedb`, `pylance`,
-`open-clip-torch`, `openai`, and `pydantic-ai`. No system packages are needed for these
-born-digital PDFs (LiteParse bundles PDFium; OCR is off).
+Each `uv run …` below also installs on first use, so this step is optional — but it makes the
+first run explicit and surfaces any install issues up front. No system packages are needed for
+these born-digital PDFs: LiteParse bundles PDFium and OCR is off.
+
+**2. Add your OpenAI API key.** The OpenAI text embeddings and the answer/judge models need a key.
+(Skip this if you only want the offline smoke test described at the end.)
+
+```bash
+cp .env.example .env          # then edit .env and set OPENAI_API_KEY
+set -a && source .env && set +a
+```
 
 ## Reproduce the results
 
@@ -82,6 +92,12 @@ Each step writes its outputs and metrics to disk. Generated data under `data/` i
 uv run python scripts/download_climate_finance_bench.py \
   --companies Samsung NVIDIA Google "Ali Baba Group" Nestle "Total Energies S.A" \
   --out data/raw/climate_finance_bench
+```
+
+Optionally sanity-check the download — counts of reports, pages, and labeled questions:
+
+```bash
+uv run python scripts/inspect_benchmark.py
 ```
 
 **2. Parse with LiteParse** → normalized `documents`/`pages`/`chunks`/`assets` records, page
@@ -169,8 +185,8 @@ table and figure questions.
 ## Repository layout
 
 ```text
-src/            parse, schema, index (build), retrieval, embeddings, eval, answer_eval
-scripts/        download / inspect / parse / build / run_retrieval_eval / run_answer_eval
+src/            config, benchmark, reports, parse, schema, embeddings, index (build), retrieval, eval, answer_eval
+scripts/        download / inspect / parse / build / run_retrieval_eval / summarize_retrieval_results / run_answer_eval
 data/           raw PDFs, parsed records, LanceDB store, eval sets (gitignored)
 results/        extraction, storage, and retrieval metrics (JSON)
 ```
