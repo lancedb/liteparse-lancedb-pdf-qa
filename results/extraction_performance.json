@@ -1,0 +1,86 @@
+{
+  "documents": 6,
+  "pages": 70,
+  "chunks": 252,
+  "assets": 77,
+  "liteparse_parse_seconds": 0.5142747479912941,
+  "liteparse_screenshot_seconds": 1.7661897499929182,
+  "total_extraction_seconds": 2.349636332000955,
+  "parse_pages_per_second": 136.11401351789684,
+  "screenshot_pages_per_second": 39.633340642068994,
+  "end_to_end_pages_per_second": 29.791844400187607,
+  "by_document": [
+    {
+      "doc_id": "total_energies_s_a_2023_totalenergies_sustainability_climate_2024_progre",
+      "company": "Total Energies S.A",
+      "source_pdf": "totalenergies_sustainability-climate-2024-progress-report_2024_en_pdf (1).pdf",
+      "pages": 18,
+      "chunks": 53,
+      "assets": 20,
+      "liteparse_parse_seconds": 0.12784074999945005,
+      "liteparse_screenshot_seconds": 0.34301549999509007,
+      "total_extraction_seconds": 0.4847515410001506,
+      "parse_pages_per_second": 140.8001752186015
+    },
+    {
+      "doc_id": "ali_baba_group_2024_2024_alibaba_group_environmental_social_and_gove",
+      "company": "Ali Baba Group",
+      "source_pdf": "2024 Alibaba Group Environmental, Social and Governance Report-0809.pdf",
+      "pages": 12,
+      "chunks": 41,
+      "assets": 6,
+      "liteparse_parse_seconds": 0.0714232499958598,
+      "liteparse_screenshot_seconds": 0.21831879200180992,
+      "total_extraction_seconds": 0.29776920799486106,
+      "parse_pages_per_second": 168.01251694225067
+    },
+    {
+      "doc_id": "nestle_2023_creating_shared_value_sustainability_report_2023",
+      "company": "Nestle",
+      "source_pdf": "creating-shared-value-sustainability-report-2023-en.pdf",
+      "pages": 8,
+      "chunks": 40,
+      "assets": 6,
+      "liteparse_parse_seconds": 0.05792616600228939,
+      "liteparse_screenshot_seconds": 0.42606304199580336,
+      "total_extraction_seconds": 0.4993888750032056,
+      "parse_pages_per_second": 138.10684449034343
+    },
+    {
+      "doc_id": "samsung_2023_samsung_electronics_sustainability_report_2024_e",
+      "company": "Samsung",
+      "source_pdf": "Samsung_Electronics_Sustainability_Report_2024_ENG.pdf",
+      "pages": 6,
+      "chunks": 31,
+      "assets": 3,
+      "liteparse_parse_seconds": 0.035381416004383937,
+      "liteparse_screenshot_seconds": 0.09148025000467896,
+      "total_extraction_seconds": 0.13170745800016448,
+      "parse_pages_per_second": 169.5805504012776
+    },
+    {
+      "doc_id": "google_2023_google_2024_environmental_report",
+      "company": "Google",
+      "source_pdf": "google-2024-environmental-report.pdf",
+      "pages": 14,
+      "chunks": 52,
+      "assets": 40,
+      "liteparse_parse_seconds": 0.16913133299385663,
+      "liteparse_screenshot_seconds": 0.5089749159960775,
+      "total_extraction_seconds": 0.697338124999078,
+      "parse_pages_per_second": 82.77591001135504
+    },
+    {
+      "doc_id": "nvidia_2024_fy2024_nvidia_corporate_sustainability_report",
+      "company": "NVIDIA",
+      "source_pdf": "FY2024-NVIDIA-Corporate-Sustainability-Report.pdf",
+      "pages": 12,
+      "chunks": 35,
+      "assets": 2,
+      "liteparse_parse_seconds": 0.052571832995454315,
+      "liteparse_screenshot_seconds": 0.17833724999945844,
+      "total_extraction_seconds": 0.23868112500349525,
+      "parse_pages_per_second": 228.25911360247974
+    }
+  ]
+}

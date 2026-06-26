@@ -1,0 +1,22 @@
+{
+  "db_path": "data/lancedb/esg_pdf_qa_openai_small_clip.lancedb",
+  "row_counts": {
+    "documents": 6,
+    "pages": 70,
+    "chunks": 252,
+    "assets": 77,
+    "eval_questions": 50
+  },
+  "embedding": {
+    "text_backend": "openai",
+    "text_model": "text-embedding-3-small",
+    "text_dimensions": 1536,
+    "image_backend": "open-clip",
+    "image_model": "ViT-B-32",
+    "image_pretrained": "laion2b_s34b_b79k",
+    "image_dimensions": 512
+  },
+  "write_seconds": 0.19870770900161006,
+  "index_seconds": 0.09689670899388148,
+  "db_size_bytes": 119054769
+}

@@ -1,0 +1,611 @@
+{
+  "label": "openai_small_clip",
+  "by_company": [
+    {
+      "retrieval_mode": "assets",
+      "company": "Ali Baba Group",
+      "questions": 10,
+      "any_page_hit_rate": 0.4,
+      "page_coverage": 0.2833333333333333,
+      "all_pages_hit_rate": 0.2,
+      "modality_hit_rate": 0.7,
+      "latency_ms_p50": 3.126458999759052
+    },
+    {
+      "retrieval_mode": "assets",
+      "company": "Google",
+      "questions": 9,
+      "any_page_hit_rate": 0.2222222222222222,
+      "page_coverage": 0.1388888888888889,
+      "all_pages_hit_rate": 0.1111111111111111,
+      "modality_hit_rate": 0.7777777777777778,
+      "latency_ms_p50": 3.5340419999556616
+    },
+    {
+      "retrieval_mode": "assets",
+      "company": "NVIDIA",
+      "questions": 8,
+      "any_page_hit_rate": 0.625,
+      "page_coverage": 0.2916666666666667,
+      "all_pages_hit_rate": 0.125,
+      "modality_hit_rate": 0.75,
+      "latency_ms_p50": 1.840791999711655
+    },
+    {
+      "retrieval_mode": "assets",
+      "company": "Nestle",
+      "questions": 8,
+      "any_page_hit_rate": 0.625,
+      "page_coverage": 0.4791666666666667,
+      "all_pages_hit_rate": 0.375,
+      "modality_hit_rate": 0.75,
+      "latency_ms_p50": 2.1308750001480803
+    },
+    {
+      "retrieval_mode": "assets",
+      "company": "Samsung",
+      "questions": 7,
+      "any_page_hit_rate": 0.7142857142857143,
+      "page_coverage": 0.6666666666666667,
+      "all_pages_hit_rate": 0.5714285714285714,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 1.7172079969896004
+    },
+    {
+      "retrieval_mode": "assets",
+      "company": "Total Energies S.A",
+      "questions": 8,
+      "any_page_hit_rate": 0.5,
+      "page_coverage": 0.1886904761904762,
+      "all_pages_hit_rate": 0.0,
+      "modality_hit_rate": 0.75,
+      "latency_ms_p50": 2.0292909975978546
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "Ali Baba Group",
+      "questions": 10,
+      "any_page_hit_rate": 0.8,
+      "page_coverage": 0.7,
+      "all_pages_hit_rate": 0.6,
+      "modality_hit_rate": 0.7,
+      "latency_ms_p50": 5.253374998574145
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "Google",
+      "questions": 9,
+      "any_page_hit_rate": 0.6666666666666666,
+      "page_coverage": 0.5694444444444444,
+      "all_pages_hit_rate": 0.5555555555555556,
+      "modality_hit_rate": 0.5555555555555556,
+      "latency_ms_p50": 5.857916003151331
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "NVIDIA",
+      "questions": 8,
+      "any_page_hit_rate": 0.625,
+      "page_coverage": 0.3854166666666667,
+      "all_pages_hit_rate": 0.25,
+      "modality_hit_rate": 0.625,
+      "latency_ms_p50": 1.9830419987556525
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "Nestle",
+      "questions": 8,
+      "any_page_hit_rate": 0.875,
+      "page_coverage": 0.8125,
+      "all_pages_hit_rate": 0.75,
+      "modality_hit_rate": 0.5,
+      "latency_ms_p50": 2.217583001765888
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "Samsung",
+      "questions": 7,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7619047619047619,
+      "all_pages_hit_rate": 0.5714285714285714,
+      "modality_hit_rate": 0.5714285714285714,
+      "latency_ms_p50": 2.0647080018534325
+    },
+    {
+      "retrieval_mode": "chunks",
+      "company": "Total Energies S.A",
+      "questions": 8,
+      "any_page_hit_rate": 0.5,
+      "page_coverage": 0.29404761904761906,
+      "all_pages_hit_rate": 0.125,
+      "modality_hit_rate": 0.5,
+      "latency_ms_p50": 2.0961670015822165
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "Ali Baba Group",
+      "questions": 10,
+      "any_page_hit_rate": 0.8,
+      "page_coverage": 0.7,
+      "all_pages_hit_rate": 0.6,
+      "modality_hit_rate": 0.9,
+      "latency_ms_p50": 7.665208002435975
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "Google",
+      "questions": 9,
+      "any_page_hit_rate": 0.7777777777777778,
+      "page_coverage": 0.6944444444444444,
+      "all_pages_hit_rate": 0.6666666666666666,
+      "modality_hit_rate": 0.5555555555555556,
+      "latency_ms_p50": 9.323624995886348
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "NVIDIA",
+      "questions": 8,
+      "any_page_hit_rate": 0.875,
+      "page_coverage": 0.6979166666666666,
+      "all_pages_hit_rate": 0.5,
+      "modality_hit_rate": 0.625,
+      "latency_ms_p50": 5.704082999727689
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "Nestle",
+      "questions": 8,
+      "any_page_hit_rate": 0.875,
+      "page_coverage": 0.875,
+      "all_pages_hit_rate": 0.875,
+      "modality_hit_rate": 0.5,
+      "latency_ms_p50": 5.96154199593002
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "Samsung",
+      "questions": 7,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 0.7142857142857143,
+      "latency_ms_p50": 5.537459001061507
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "company": "Total Energies S.A",
+      "questions": 8,
+      "any_page_hit_rate": 0.625,
+      "page_coverage": 0.4785714285714286,
+      "all_pages_hit_rate": 0.375,
+      "modality_hit_rate": 0.75,
+      "latency_ms_p50": 5.9045419984613545
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "Ali Baba Group",
+      "questions": 10,
+      "any_page_hit_rate": 0.6,
+      "page_coverage": 0.475,
+      "all_pages_hit_rate": 0.4,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 3.1904999996186234
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "Google",
+      "questions": 9,
+      "any_page_hit_rate": 0.7777777777777778,
+      "page_coverage": 0.6944444444444444,
+      "all_pages_hit_rate": 0.6666666666666666,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 3.598833005526103
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "NVIDIA",
+      "questions": 8,
+      "any_page_hit_rate": 0.75,
+      "page_coverage": 0.65625,
+      "all_pages_hit_rate": 0.5,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 1.7732919950503856
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "Nestle",
+      "questions": 8,
+      "any_page_hit_rate": 0.875,
+      "page_coverage": 0.8125,
+      "all_pages_hit_rate": 0.75,
+      "modality_hit_rate": 0.875,
+      "latency_ms_p50": 2.1360000027925707
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "Samsung",
+      "questions": 7,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 1.6929999983403832
+    },
+    {
+      "retrieval_mode": "pages",
+      "company": "Total Energies S.A",
+      "questions": 8,
+      "any_page_hit_rate": 0.625,
+      "page_coverage": 0.4785714285714286,
+      "all_pages_hit_rate": 0.375,
+      "modality_hit_rate": 0.75,
+      "latency_ms_p50": 2.1434160007629544
+    }
+  ],
+  "by_question_type": [
+    {
+      "retrieval_mode": "assets",
+      "question_type": "LR",
+      "questions": 24,
+      "any_page_hit_rate": 0.4166666666666667,
+      "page_coverage": 0.2524801587301587,
+      "all_pages_hit_rate": 0.16666666666666666,
+      "modality_hit_rate": 0.9583333333333334,
+      "latency_ms_p50": 2.2101670037955046
+    },
+    {
+      "retrieval_mode": "assets",
+      "question_type": "NR",
+      "questions": 8,
+      "any_page_hit_rate": 0.375,
+      "page_coverage": 0.3125,
+      "all_pages_hit_rate": 0.25,
+      "modality_hit_rate": 0.375,
+      "latency_ms_p50": 2.249165998364333
+    },
+    {
+      "retrieval_mode": "assets",
+      "question_type": "PE",
+      "questions": 18,
+      "any_page_hit_rate": 0.6666666666666666,
+      "page_coverage": 0.437037037037037,
+      "all_pages_hit_rate": 0.2777777777777778,
+      "modality_hit_rate": 0.7222222222222222,
+      "latency_ms_p50": 2.024375004111789
+    },
+    {
+      "retrieval_mode": "chunks",
+      "question_type": "LR",
+      "questions": 24,
+      "any_page_hit_rate": 0.5,
+      "page_coverage": 0.3834325396825397,
+      "all_pages_hit_rate": 0.2916666666666667,
+      "modality_hit_rate": 0.875,
+      "latency_ms_p50": 2.2534160016220994
+    },
+    {
+      "retrieval_mode": "chunks",
+      "question_type": "NR",
+      "questions": 8,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 0.9375,
+      "all_pages_hit_rate": 0.875,
+      "modality_hit_rate": 0.0,
+      "latency_ms_p50": 3.693874998134561
+    },
+    {
+      "retrieval_mode": "chunks",
+      "question_type": "PE",
+      "questions": 18,
+      "any_page_hit_rate": 0.8888888888888888,
+      "page_coverage": 0.7050925925925926,
+      "all_pages_hit_rate": 0.5555555555555556,
+      "modality_hit_rate": 0.4444444444444444,
+      "latency_ms_p50": 2.1609579998767003
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "question_type": "LR",
+      "questions": 24,
+      "any_page_hit_rate": 0.7083333333333334,
+      "page_coverage": 0.6463293650793651,
+      "all_pages_hit_rate": 0.5833333333333334,
+      "modality_hit_rate": 0.9166666666666666,
+      "latency_ms_p50": 6.0577499971259385
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "question_type": "NR",
+      "questions": 8,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 0.25,
+      "latency_ms_p50": 6.260957998165395
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "question_type": "PE",
+      "questions": 18,
+      "any_page_hit_rate": 0.8888888888888888,
+      "page_coverage": 0.7305555555555556,
+      "all_pages_hit_rate": 0.6111111111111112,
+      "modality_hit_rate": 0.5555555555555556,
+      "latency_ms_p50": 6.019792002916802
+    },
+    {
+      "retrieval_mode": "pages",
+      "question_type": "LR",
+      "questions": 24,
+      "any_page_hit_rate": 0.5833333333333334,
+      "page_coverage": 0.5491071428571429,
+      "all_pages_hit_rate": 0.5,
+      "modality_hit_rate": 0.9166666666666666,
+      "latency_ms_p50": 2.1434160007629544
+    },
+    {
+      "retrieval_mode": "pages",
+      "question_type": "NR",
+      "questions": 8,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 0.9375,
+      "all_pages_hit_rate": 0.875,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 2.250541998364497
+    },
+    {
+      "retrieval_mode": "pages",
+      "question_type": "PE",
+      "questions": 18,
+      "any_page_hit_rate": 0.8888888888888888,
+      "page_coverage": 0.7166666666666667,
+      "all_pages_hit_rate": 0.6111111111111112,
+      "modality_hit_rate": 0.9444444444444444,
+      "latency_ms_p50": 1.9483330033835955
+    }
+  ],
+  "by_modality": [
+    {
+      "retrieval_mode": "assets",
+      "expected_modality": "figure",
+      "questions": 7,
+      "any_page_hit_rate": 0.2857142857142857,
+      "page_coverage": 0.16666666666666666,
+      "all_pages_hit_rate": 0.0,
+      "modality_hit_rate": 0.2857142857142857,
+      "latency_ms_p50": 2.1335829951567575
+    },
+    {
+      "retrieval_mode": "assets",
+      "expected_modality": "table",
+      "questions": 14,
+      "any_page_hit_rate": 0.5714285714285714,
+      "page_coverage": 0.44642857142857145,
+      "all_pages_hit_rate": 0.35714285714285715,
+      "modality_hit_rate": 0.5714285714285714,
+      "latency_ms_p50": 1.8761669998639263
+    },
+    {
+      "retrieval_mode": "assets",
+      "expected_modality": "text",
+      "questions": 29,
+      "any_page_hit_rate": 0.5172413793103449,
+      "page_coverage": 0.3106732348111658,
+      "all_pages_hit_rate": 0.20689655172413793,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 2.2101670037955046
+    },
+    {
+      "retrieval_mode": "chunks",
+      "expected_modality": "figure",
+      "questions": 7,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7380952380952381,
+      "all_pages_hit_rate": 0.5714285714285714,
+      "modality_hit_rate": 0.0,
+      "latency_ms_p50": 2.0961670015822165
+    },
+    {
+      "retrieval_mode": "chunks",
+      "expected_modality": "table",
+      "questions": 14,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7589285714285714,
+      "all_pages_hit_rate": 0.7142857142857143,
+      "modality_hit_rate": 0.0,
+      "latency_ms_p50": 2.0341660056146793
+    },
+    {
+      "retrieval_mode": "chunks",
+      "expected_modality": "text",
+      "questions": 29,
+      "any_page_hit_rate": 0.6206896551724138,
+      "page_coverage": 0.46904761904761905,
+      "all_pages_hit_rate": 0.3448275862068966,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 2.344375003303867
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "expected_modality": "figure",
+      "questions": 7,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.8571428571428571,
+      "all_pages_hit_rate": 0.8571428571428571,
+      "modality_hit_rate": 0.2857142857142857,
+      "latency_ms_p50": 5.9045419984613545
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "expected_modality": "table",
+      "questions": 14,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7678571428571429,
+      "all_pages_hit_rate": 0.7142857142857143,
+      "modality_hit_rate": 0.21428571428571427,
+      "latency_ms_p50": 6.005666000419296
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "expected_modality": "text",
+      "questions": 29,
+      "any_page_hit_rate": 0.7931034482758621,
+      "page_coverage": 0.6866174055829228,
+      "all_pages_hit_rate": 0.5862068965517241,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 6.0792500007664785
+    },
+    {
+      "retrieval_mode": "pages",
+      "expected_modality": "figure",
+      "questions": 7,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7857142857142857,
+      "all_pages_hit_rate": 0.7142857142857143,
+      "modality_hit_rate": 0.8571428571428571,
+      "latency_ms_p50": 2.1434160007629544
+    },
+    {
+      "retrieval_mode": "pages",
+      "expected_modality": "table",
+      "questions": 14,
+      "any_page_hit_rate": 0.8571428571428571,
+      "page_coverage": 0.7678571428571429,
+      "all_pages_hit_rate": 0.7142857142857143,
+      "modality_hit_rate": 0.8571428571428571,
+      "latency_ms_p50": 1.8159579994971864
+    },
+    {
+      "retrieval_mode": "pages",
+      "expected_modality": "text",
+      "questions": 29,
+      "any_page_hit_rate": 0.6896551724137931,
+      "page_coverage": 0.5975369458128079,
+      "all_pages_hit_rate": 0.5172413793103449,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 2.1353330012061633
+    }
+  ],
+  "by_difficulty": [
+    {
+      "retrieval_mode": "assets",
+      "difficulty": "easy",
+      "questions": 2,
+      "any_page_hit_rate": 0.5,
+      "page_coverage": 0.5,
+      "all_pages_hit_rate": 0.5,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 3.9778749996912666
+    },
+    {
+      "retrieval_mode": "assets",
+      "difficulty": "hard",
+      "questions": 29,
+      "any_page_hit_rate": 0.5172413793103449,
+      "page_coverage": 0.2733169129720854,
+      "all_pages_hit_rate": 0.13793103448275862,
+      "modality_hit_rate": 0.9655172413793104,
+      "latency_ms_p50": 2.1700419965782203
+    },
+    {
+      "retrieval_mode": "assets",
+      "difficulty": "medium",
+      "questions": 19,
+      "any_page_hit_rate": 0.47368421052631576,
+      "page_coverage": 0.39473684210526316,
+      "all_pages_hit_rate": 0.3157894736842105,
+      "modality_hit_rate": 0.47368421052631576,
+      "latency_ms_p50": 2.0903330005239695
+    },
+    {
+      "retrieval_mode": "chunks",
+      "difficulty": "easy",
+      "questions": 2,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 6.914833000337239
+    },
+    {
+      "retrieval_mode": "chunks",
+      "difficulty": "hard",
+      "questions": 29,
+      "any_page_hit_rate": 0.5517241379310345,
+      "page_coverage": 0.3756568144499179,
+      "all_pages_hit_rate": 0.2413793103448276,
+      "modality_hit_rate": 0.8620689655172413,
+      "latency_ms_p50": 2.206582998041995
+    },
+    {
+      "retrieval_mode": "chunks",
+      "difficulty": "medium",
+      "questions": 19,
+      "any_page_hit_rate": 0.9473684210526315,
+      "page_coverage": 0.868421052631579,
+      "all_pages_hit_rate": 0.7894736842105263,
+      "modality_hit_rate": 0.10526315789473684,
+      "latency_ms_p50": 2.0647080018534325
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "difficulty": "easy",
+      "questions": 2,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 8.827208002912812
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "difficulty": "hard",
+      "questions": 29,
+      "any_page_hit_rate": 0.7241379310344828,
+      "page_coverage": 0.6090311986863711,
+      "all_pages_hit_rate": 0.5172413793103449,
+      "modality_hit_rate": 0.896551724137931,
+      "latency_ms_p50": 5.96154199593002
+    },
+    {
+      "retrieval_mode": "hybrid_bundle",
+      "difficulty": "medium",
+      "questions": 19,
+      "any_page_hit_rate": 0.9473684210526315,
+      "page_coverage": 0.8947368421052632,
+      "all_pages_hit_rate": 0.8421052631578947,
+      "modality_hit_rate": 0.3157894736842105,
+      "latency_ms_p50": 6.005666000419296
+    },
+    {
+      "retrieval_mode": "pages",
+      "difficulty": "easy",
+      "questions": 2,
+      "any_page_hit_rate": 1.0,
+      "page_coverage": 1.0,
+      "all_pages_hit_rate": 1.0,
+      "modality_hit_rate": 1.0,
+      "latency_ms_p50": 3.750708005100023
+    },
+    {
+      "retrieval_mode": "pages",
+      "difficulty": "hard",
+      "questions": 29,
+      "any_page_hit_rate": 0.6206896551724138,
+      "page_coverage": 0.5199507389162562,
+      "all_pages_hit_rate": 0.4482758620689655,
+      "modality_hit_rate": 0.9310344827586207,
+      "latency_ms_p50": 2.1353330012061633
+    },
+    {
+      "retrieval_mode": "pages",
+      "difficulty": "medium",
+      "questions": 19,
+      "any_page_hit_rate": 0.9473684210526315,
+      "page_coverage": 0.868421052631579,
+      "all_pages_hit_rate": 0.7894736842105263,
+      "modality_hit_rate": 0.9473684210526315,
+      "latency_ms_p50": 1.9483330033835955
+    }
+  ]
+}
