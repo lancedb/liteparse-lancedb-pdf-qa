@@ -124,8 +124,9 @@ class Retriever:
     def page_screenshots(self, page_ids: list[str], max_images: int) -> list[tuple[str, bytes]]:
         """Read page-screenshot bytes from the LanceDB blob column for the given pages.
 
-        Uses Lance's blob API so the bytes are only materialized for these few pages,
-        never scanned during search. Local/OSS path (relies on ``to_lance()``).
+        Uses Lance's ``read_blobs`` (the API for complete payloads) so the bytes are
+        only materialized for these few pages, never scanned during search. Local/OSS
+        path (relies on ``to_lance()``).
         """
         ids = list(dict.fromkeys(pid for pid in page_ids if pid))[:max_images]
         if not ids:
@@ -139,8 +140,8 @@ class Retriever:
         addresses = located.column("_rowaddr").to_pylist()
         if not addresses:
             return []
-        blobs = dataset.take_blobs("screenshot_blob", addresses=addresses)
-        by_id = {pid: blob.read() for pid, blob in zip(found_ids, blobs)}
+        rows = dataset.read_blobs("screenshot_blob", addresses=addresses)
+        by_id = {pid: payload for pid, (_addr, payload) in zip(found_ids, rows)}
         return [(pid, by_id[pid]) for pid in ids if pid in by_id]
 
 
